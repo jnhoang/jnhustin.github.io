@@ -1,0 +1,58 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+ }
+p {
+  font-size: 1.5em;
+}
+/*Banner Image*/
+.banner-img {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  width: 100vw;
+}
+.banner-content {
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+.name {
+  display: block;
+  font-size: 3.5em;
+}
+.title {
+  text-align: center;
+  display: block;
+  font-size: 1.25em;
+}
+.video-container {
+  height: 350px;
+  display: flex;
+  align-items: center;
+}
+video {
+  box-shadow: 0 0 5px black;
+  height: auto;
+  width: 100%;
+}
+/*icons*/
+.icon-links {
+  right: 2em;
+  top: 25em;
+  list-style: none;
+  position: fixed;
+}
+.icon-links li {
+  border: 1px solid red;
+  overflow-x: hidden;
+  width: 4em;
+}
+.icon-links li:hover {
+  width: 20em;
+}
+i:hover {
+  cursor: pointer;
+  color: coral;
+}
