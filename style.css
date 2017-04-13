@@ -4,20 +4,34 @@ body {
 p {
   font-size: 1.5em;
 }
+.devicon {
+  color: blue;
+  font-size: 3em;
+}
+h2 {
+  margin-bottom: 1em;
+}
 /*Banner Image*/
 .banner-img {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 70vh;
+  min-height: 65vh;
   width: 100vw;
+  background: #41A2E8;
+  /*background: -webkit-linear-gradient(left top, #41A2E8, #B44878, #5AFEFF); 
+  background: -o-linear-gradient(left top, #41A2E8, #B44878, #5AFEFF); 
+  background: -moz-linear-gradient(left top, #41A2E8, #B44878, #5AFEFF); 
+  background: linear-gradient(to left top, #41A2E8, #B44878, #5AFEFF); */
 }
 .banner-content {
-display: flex;
-justify-content: center;
-flex-direction: column;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  text-shadow: 5px 5px 1px black;
 }
+
 .name {
   display: block;
   font-size: 3.5em;
@@ -27,6 +41,26 @@ flex-direction: column;
   display: block;
   font-size: 1.25em;
 }
+/*QuickLinks*/
+.quick-links {
+  margin-top: 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.quick-links
+h3
+a {
+  color: white;
+  text-decoration: none;
+}
+.quick-links
+h3
+a:hover {
+  color: grey;
+}
+
+/*VIDS*/
 .video-container {
   height: 350px;
   display: flex;
@@ -34,25 +68,56 @@ flex-direction: column;
 }
 video {
   box-shadow: 0 0 5px black;
+
   height: auto;
   width: 100%;
 }
-/*icons*/
-.icon-links {
+/*hover-icons*/
+.hover-icons {
   right: 2em;
   top: 25em;
   list-style: none;
   position: fixed;
 }
-.icon-links li {
+.hover-icons li {
   border: 1px solid red;
   overflow-x: hidden;
   width: 4em;
 }
-.icon-links li:hover {
+.hover-icons li:hover {
   width: 20em;
 }
 i:hover {
   cursor: pointer;
   color: coral;
+}
+/* Project */
+.panel {
+  box-shadow: 0 1px 5px black;
+}
+.devicon .tooltip-text {
+  visibility: hidden;
+  font-size: .7em;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  position: absolute;
+  z-index: 1;
+}
+.devicon:hover .tooltip-text {
+    visibility: visible;
+}
+
+/*footer*/
+.footer-skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.footer-skills div p {
+  font-size: 12px;
 }

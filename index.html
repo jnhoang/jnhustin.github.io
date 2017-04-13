@@ -7,115 +7,153 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <!-- fontAwesome -->
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!-- dev Icons -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
+
   <!-- Jquery UI Stycle-->
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-  <!-- Own CSS -->
+  <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="style.css">
   
 </head>
 
 <body>
+  <!-- NAVBAR -->
+  <nav class="navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button 
+          type="button" 
+          class="navbar-toggle collapsed" 
+          data-toggle="collapse"
+          data-target="#nav-links"
+          aria-expanded="false">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Justin Hoang</a>
+      </div>
 
-  <nav>
+      <div class="collapse navbar-collapse" id="nav-links">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#">
+              <i class="fa fa-1x fa-file-text-o" aria-hidden="true"></i>
+              Resume
+            </a>
+          </li>
+         <!--  <li><a href="#">Link2</a></li> 
+          <li><a href="#">Link3</a></li>  -->   
+        </ul>
+      </div>
+    </div>
     
   </nav>
+
+  
   <!-- Hover Icons -->
-<!--   <ul class="icon-links">
+  <ul class="hover-icons">
     <li>
       <a href="#"><i class="fa fa-3x fa-github" aria-hidden="true"></i></a>https://github.com/jnhustin
     </li>
     <li><a href="#"><i class="fa fa-3x fa-envelope-o" aria-hidden="true"></i></a>jnhustin@gmail.com</li>
-  </ul> -->
+  </ul>
+  
   <!-- Banner Image -->
   <section>
+
     <div class="banner-img">
       <div class="banner-content">
         
         <!-- Labels -->
         <h1>
           <span class="name">Justin Hoang</span>
-          <span class="title">Javascript Developer</span>
+          <span class="title">JavaScript Developer</span>
         </h1>
         
         <!-- Quick Links -->
-        <div class="text-center">
-          <a href="#about" data-scroll>About</a>
-          <a href="#projects" data-scroll>Projects</a>
-          <a href="#skills" data-scroll>Skills</a>
+        <div class="text-center quick-links">
+          <h3><a href="#about" data-scroll>About</a></h3>
+          <h3><a href="#projects" data-scroll>Projects</a></h3>
+          <h3><a href="#skills" data-scroll>Skills</a></h3>
         </div>
 
       </div>
     </div>
   </section>
 
-  <section>
     <!-- contact -->
+    <!-- Resume link -->
+  <!-- <section>
     <a href="#"><i class="fa fa-3x fa-github" aria-hidden="true"></i></a>
     <a href="#"><i class="fa fa-3x fa-linkedin-square" aria-hidden="true"></i></a>
     <a href="#"><i class="fa fa-3x fa-envelope-o" aria-hidden="true"></i></a>
 
-    <!-- Resume link -->
     <a href="#"><i class="fa fa-3x fa-file-text-o" aria-hidden="true"></i></a>
     <a href="#"><i class="fa fa-3x fa-file-pdf-o" aria-hidden="true"></i></a>
-  </section>
+  </section> -->
 
-  <div class="container">
-    <section id="about">
-      <h3>About</h3>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-
-    </section>
-  </div>
+  
   <!-- Project List -->
-  <div class="container">
-    <section id="projects">
-      <h3 class="text-center">Featured Projects</h3>
+  <section id="projects">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs12">
+          <h2 class="text-center">Featured Projects</h2>
+        </div>
+      </div>
       
       <!-- CARCASSONNE CASTLES -->
-      <div class="row">
+      <div class="row panel">
 
         <!-- DESCRIPTION -->
-        <div class="col-xs-12 col-sm-6">
-          <h3>Carcassonne Castles</h3>
-          <li>skills used</li>
-          <p class="text-justify">A competitive two player game  set in the Southern French landscape and inspired by the board game Carcassonne. Opponents take turns drawing tiles to build a landscape of castles, strategically assigning builders to castles under construction. Clever utilization of builders will earn a player more points.</p>
+        <div class="col-xs-12 col-md-6">
+          <h3>Carcassonne Castles</h3> 
           <a href="">Check it out</a>
+          <p class="text-justify">A competitive two player game  set in the Southern French landscape and inspired by the board game Carcassonne. Opponents take turns drawing tiles to build a landscape of castles, strategically assigning builders to castles under construction. Clever utilization of builders will earn a player more points.</p>
+          <li>skills used: HTML, CSS, Javascript, jQuery</li>
         </div>
 
         <!-- IMAGE -->
-        <div class="col-xs-12 col-sm-6">
-          <img src="">
+        <div class=" video-container col-xs-12 col-md-6">
+          <a href="#">
+            <video class="" autoplay loop muted>
+            <source src="vids/carcassonne-demo.mp4" type="video/mp4">
+            </video>
+          </a>
         </div>
 
       </div>
 
       <!-- GAME SHARE -->
-      <div class="row">
+      <div class="row panel">
       
         <!-- IMAGE -->
-        <div class=" video-container col-xs-12 col-sm-6">
-          <video class="" autoplay loop muted>
-            <source src="vids/gameshare-demo.mp4" type="video/mp4">
-          </video>
+        <div class=" video-container col-xs-12 col-md-6">
+          <a href="#">
+            <video class="" autoplay loop muted>
+              <source src="vids/gameshare-demo.mp4" type="video/mp4">
+            </video>
+          </a>
         </div>
 
         <!-- DESCRIPTION -->
-        <div class="col-xs-12 col-sm-6">
+        <div class="col-xs-12 col-md-6">
           <h3>Game Share</h3>
           <li>skills used</li>
           <p class="text-justify">GameShare is inspired by a childhood of lending and talking about games with friends in grade school. A user is able to invite friends to a GameShare community. Within a community a user as able  to lend/borrow games from other community members. GameShare offers the ability for users to track the games they have borrowed and loaned.</p>
-          <a href="">Check it out</a>
+          <a href="#">Check it out</a>
         </div>
 
       </div>
 
       <!-- TRAVEL SENSEI -->
-      <div class="row">
+      <div class="row panel">
       
         <!-- DESCRIPTION -->
-        <div class="col-xs-12 col-sm-6">
+        <div class="col-xs-12 col-md-6">
           <h3>Travel Sensei</h3>
           <li>skills used</li>
           <p class="text-justify">Travel sensei was a product of a 1-day hackathon with 2 other developers. Built in Angular, this was our first project within the framework and was designed to highlight travel destinations while using multiple APIs (Yelp & QPX).</p>
@@ -123,42 +161,93 @@
         </div>
 
         <!-- IMAGE -->
-        <div class="col-xs-12 col-sm-6">
+        <div class="col-xs-12 col-md-6">
           <img src="">
         </div>
 
       </div>
 
       <!-- TEXPERT -->
-      <div class="row">
+      <div class="row panel">
       
         <!-- IMAGE -->
-        <div class="col-xs-12 col-sm-6">
+        <div class="col-xs-12 col-md-6">
           <img src="">
         </div>
 
         <!-- DESCRIPTION -->
-        <div class="col-xs-12 col-sm-6">
+        <div class="col-xs-12 col-md-6">
           <h3>Texpert</h3>
           <li>skills used</li>
           <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <a href="">Check it out</a>
         </div>
         
-
       </div>
 
       <!-- ANIME LIST -->
-    </section>
-  </div>
 
-  <!-- Skill Section -->
-  <section id="skills">
-    
+    </div>
   </section>
 
-  <footer>
-    
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs12">
+          <h2 class="text-center">About</h2>
+          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- Skill Section -->
+  <section id="skills">
+    <div class="container">
+      <!-- ICON LIST -->
+      <div class="text-center">
+
+        <i class="devicon-angularjs-plain devicon">
+          <span class="tooltip-text">Angular JS</span>
+        </i>
+        <i class="devicon-css3-plain devicon"></i>
+        <i class="devicon-html5-plain devicon"></i>
+        <i class="devicon-javascript-plain devicon"></i>
+        <i class="devicon-mongodb-plain devicon"></i>
+        <i class="devicon-nodejs-plain-wordmark devicon"></i>
+        <i class="devicon-postgresql-plain devicon"></i>
+        <i class="devicon-sequelize-plain devicon"></i>
+        <i class="devicon-heroku-original devicon"></i>
+        <i class="devicon-jquery-plain-wordmark devicon"></i>
+      </div>
+      <div class="footer-skills well">
+        <!-- Listing -->
+        <div>    
+          <h4>Languages</h4>
+          <p>CSS3, HTML5, JavaScript, JSON, Python, Ruby</p>
+        </div>
+        <div>
+          <h4>Frameworks</h4>
+          <p>Angular, Express, Node, Rails, React</p>
+        </div>
+        <div>
+          <h4>Libraries</h4>
+          <p>Bootstrap, jQuery, jQueryUI, Materialize</p>
+        </div>
+        <div>
+          <h4>Databases</h4>
+          <p>ActiveRecord, MongoDB, Mongoose, Parallax.js, PostgreSQL, Sequelize</p>
+        </div>
+        <div>
+          <h4>Other</h4>
+          <p>Agile, AJAX, Authentication, REST Routes, Sessions, TDD, Trello</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="well">
   </footer>
 
   <!-- SCRIPTS -->
@@ -167,8 +256,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <!-- Jquery UI -->
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
   <!-- Bootstrap JS -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <!-- Self JS -->
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
