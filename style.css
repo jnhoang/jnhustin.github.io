@@ -74,22 +74,45 @@ video {
 }
 /*hover-icons*/
 .hover-icons {
-  right: 2em;
-  top: 25em;
+  position: relative;
+  z-index: 2;
   list-style: none;
   position: fixed;
+  right: 2em;
+  top: 12em;
 }
 .hover-icons li {
-  border: 1px solid red;
-  overflow-x: hidden;
-  width: 4em;
+  height: 3.5em;
+  width: 3.5em;
+  border-radius: 50px;
+  background-color: coral;
+  float: right;
+  clear: both;
+  overflow: hidden;
+  margin-top: 1em;
+  transition: all .2s;
+}
+.hover-icons li a {
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+
 }
 .hover-icons li:hover {
-  width: 20em;
+  position: relative;
+  cursor: pointer;
+  width: 15em;
+  color: white;
+  background-color: #24B23F;
+  transition: all .2s;
 }
 i:hover {
   cursor: pointer;
   color: coral;
+}
+a {
+  text-decoration: none;
+  text-align: center;
 }
 /* Project */
 .panel {
