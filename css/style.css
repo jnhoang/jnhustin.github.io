@@ -5,8 +5,8 @@ p {
   font-size: 1.5em;
 }
 .devicon {
-  color: blue;
   font-size: 3em;
+  padding: 5px;
 }
 h2 {
   margin: 1.5em 0;
@@ -72,22 +72,25 @@ a:hover {
 }
 /*VIDS*/
 .video-text {
+  color: white;
   padding: 25px;
   border: 1px solid blue;
+  background-color: rgba(0,0,0,0.65);
   height: 100%;
   width: 100%;
   opacity: 0;
   position: absolute;
-  background-color: white;
   transition: all 300ms;
-
 }
+
 .video-container {
   border: 1px solid red;
+  border
   height: 350px;
   display: flex;
   align-items: center;
   overflow: hidden;
+  box-sizing: border-box;
 }
 .video-container:hover .video-text {
   opacity: 1;
@@ -98,6 +101,14 @@ video {
   box-shadow: 0 0 5px black;
   height: auto;
   width: 100%;
+}
+.more-info {
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  bottom: 15px;
+  color: whitesmoke;
+  text-shadow: 0 0 5px grey;
 }
 /*hover-icons*/
 .hover-icons {
