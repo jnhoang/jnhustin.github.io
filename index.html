@@ -2,12 +2,16 @@
 <html ng-app="Portfolio">
 <head>
   <title></title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!-- Normalize CSS -->
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <!-- fontAwesome -->
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <!-- dev Icons -->
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,900|Quicksand:300,500" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="testStyle.css">
   <!-- Angular -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
   <!-- App/Controller -->
@@ -18,25 +22,66 @@
 </head>
 <body ng-controller="HomeCtrl">
 
-<!-- Projects -->
-<section>
-  <div ng-repeat="project in projectData">
-    <p>name: {{project.name}}</p>
-    <p>description: {{project.description}}</p>
-    <p>roles: <span ng-repeat="role in project.roles">{{role}} </span></p>
-    <p>techs: <span ng-repeat="tech in project.techs">{{tech}} </span></p>
-    <p 
-      ng-if="project.contributor"
-      ng-repeat="contributor in contributors">
-      {{contributor}} 
-    </p>
-    <p>github: {{project.github}}</p>
-    <p>livesite: {{project.liveSite}}</p>
-    <p>videolink: {{project.videoLink}}</p>
-  <hr>
-  </div>
-</section>
+  <!-- Banner -->
+  <h5>Web Developer</h5>
+  <h1 class="name">Justin <span>Hoang</span></h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. </p>
+  <a href=""><h4>Learn More ></h4></a>
 
+  <!-- About Me -->
+  <section>
+    <h1>About</h1>
+    <img src="#">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. </p>
+    <!-- Skills -->
+    <h2>Languages</h2>
+    <h2>Frameworks</h2>
+    <h2>Databases</h2>
+    <h2>Other</h2>
+    <!-- ICONS -->
+  </section>
 
+  <!-- Projects -->
+  <section>
+    <h1>Projects</h1>
+    <div ng-repeat="project in projectData">
+      <h3>{{ project.name }}</h3>
+      <p>{{ project.description }}</p>
+      <h5>roles</h5>
+      <p><span ng-repeat="role in project.roles">{{ role }} </span></p>
+      <h5>techs</h5> 
+      <p><span ng-repeat="tech in project.techs">{{ tech }} </span></p>
+      <h5>Contributors</h5>
+      <p 
+        ng-if="project.contributors"
+        ng-repeat="contributor in project.contributors">
+        {{ contributor }} 
+      </p>
+      <h5>More</h5>
+      <p>github: {{ project.github }}</p>
+      <p>livesite: {{ project.liveSite }}</p>
+      <p>videolink: {{ project.videoLink }}</p>
+    <hr>
+    </div>
+  </section>
+
+  <!-- Connect -->
+  <section>
+    <h1>Connect</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. </p>
+
+    <li>
+      <a href="https://github.com/jnhustin"><i class="fa fa-3x fa-github" aria-hidden="true"></i></a>GitHub
+    </li>
+    <li>
+      <a class="text-center" href="#"><i class="fa fa-3x fa-envelope-o" aria-hidden="true"></i></a>Email
+    </li>
+    <li>
+      <a href="#"><i class="fa fa-3x fa-file-text-o" aria-hidden="true"></i></a>Resume
+    </li>
+  </section>
 </body>
 </html>
