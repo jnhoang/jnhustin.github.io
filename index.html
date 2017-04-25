@@ -48,38 +48,21 @@
       </div>
     </div>
   </section>
-
+  {{skills.languages}}
   <!-- Skills -->
   <section>
     <div class="container">
       <h1>Skills</h1>
       <div class="flex-space-around">
+        
         <div class="half-containers">
-          <h2>Languages</h2>
-          <p>
-            <span ng-repeat="language in skills.languages">
-              {{ language }}
-            </span>
-          </p>
-          <h2>Frameworks</h2>
-          <p>
-            <span ng-repeat="framework in skills.frameworks">
-              {{ framework }}
-            </span>
-          </p>
-          <h2>Databases</h2>
-            <p>
-              <span ng-repeat="db in skills.databases">
-                {{ db }}
-              </span>
-            </p>
-          <h2>Other</h2>
-          <p>
-            <span ng-repeat="other in skills.other">
-              {{ other }}
-            </span>
-          </p>
+          <div ng-repeat="(key, values) in skills">
+            <h2>{{ key }}</h2>
+            <span ng-repeat="value in values">{{ value }}</span>
+
+          </div>
         </div>
+
         <!-- ICONS -->
         <div class="half-containers">
           <span class="devicon"><i class="devicon-css3-plain-wordmark"></i></span>
@@ -96,10 +79,9 @@
 
   <!-- Projects -->
   <section>
-    <div class="container">
       <h1>Projects</h1>
       <div ng-repeat="project in projectData">
-        <div class="project-box">
+        <div class="container project-box">
           
           <div class="project-box-top flex-center">
             <div class="half-containers padding-box">
@@ -112,7 +94,7 @@
                 </p>
               </div>
             </div>
-            <div class="half-containers">
+            <div class="half-containers padding-box">
               <video autoplay loop>
                 <source ng-src="{{ project.videoLink }}" type="video/mp4">
               </video>
@@ -120,7 +102,7 @@
           </div>
                   
 
-          <div class="flex-center">
+          <div class="flex-center padding-box">
             <div class="project-info">
               <h5>roles</h5>
               <p ng-repeat="role in project.roles">{{ role }}</p>
@@ -137,12 +119,11 @@
           </div>
         </div>
       </div>
-    </div>
   </section>
 
   <!-- Connect -->
   <section>
-    <div class="container padding-box">
+    <div class="container padding-box inwell">
       <h1>Connect</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. </p>

@@ -34,7 +34,7 @@
 /*Skills Section*/
 .half-containers {
   display: inline-block;
-  width: 48%;
+  width: 45%;
 }
 .devicon {
   font-size: 8em;
@@ -44,7 +44,10 @@
 
 /*Projects Section*/
 .project-box {
-  margin: 25px 0;
+  box-shadow: 1px 3px 2px grey;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin: 50px 25px;
 }
 .padding-box {
   padding: 20px;
@@ -59,5 +62,7 @@ video {
 .project-info {
   margin: 0 30px;
 }
+
+/*Connect Section*/
 
 
