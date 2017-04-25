@@ -11,7 +11,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,900|Quicksand:300,500" rel="stylesheet">
   <!-- CSS -->
-  <link rel="stylesheet" type="text/css" href="testStyle.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <!-- Angular -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
   <!-- App/Controller -->
@@ -37,17 +37,40 @@
     <img src="#">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. </p>
+  </section>
+
     <!-- Skills -->
-    <h2>Languages</h2>
-    <p>
-      <span ng-repeat="language in skills.languages">
-        
-      </span>
-    </p>
-    <h2>Frameworks</h2>
-    <h2>Databases</h2>
-    <h2>Other</h2>
+  <section>
+    <div>
+      <h2>Languages</h2>
+      <p>
+        <span ng-repeat="language in skills.languages">
+          {{ language }}
+        </span>
+      </p>
+      <h2>Frameworks</h2>
+      <p>
+        <span ng-repeat="framework in skills.frameworks">
+          {{ framework }}
+        </span>
+      </p>
+      <h2>Databases</h2>
+        <p>
+          <span ng-repeat="db in skills.databases">
+            {{ db }}
+          </span>
+        </p>
+      <h2>Other</h2>
+      <p>
+        <span ng-repeat="other in skills.other">
+          {{ other }}
+        </span>
+      </p>
+    </div>
     <!-- ICONS -->
+    <div>
+      
+    </div>
   </section>
 
   <!-- Projects -->
