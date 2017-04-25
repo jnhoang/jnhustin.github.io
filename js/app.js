@@ -4,5 +4,6 @@ angular
   '$scope'
 , function($scope) {
     $scope.projectData = projectData;
+    $scope.skills = skills;
   }
 ])
