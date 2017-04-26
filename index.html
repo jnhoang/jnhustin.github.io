@@ -70,24 +70,22 @@
   <section id="skills">
     <div class="padding-box">
       <h1>Skills</h1>
-      <div class="flex-space-around">
-        
+      <div class="flex-space-around skill-container">
         <div class="half-containers">
           <div ng-repeat="(key, values) in skills">
             <h2>{{ key }}</h2>
             <span ng-repeat="value in values">{{ value }}</span>
-
           </div>
         </div>
 
         <!-- ICONS -->
-        <div class="half-containers">
-          <span class="devicon"><i class="devicon-css3-plain-wordmark"></i></span>
-          <span class="devicon"><i class="devicon-html5-plain-wordmark"></i></span>
-          <span class="devicon"><i class="devicon-javascript-plain"></i></span>
-          <span class="devicon"><i class="devicon-angularjs-plain"></i></span>
-          <span class="devicon"><i class="devicon-nodejs-plain"></i></span>
-          <span class="devicon"><i class="devicon-mongodb-plain-wordmark"></i></span>
+        <div class="text-center half-containers flex-space-around">
+          <div class="devicon"><i class="devicon-css3-plain-wordmark"></i></div>
+          <div class="devicon"><i class="devicon-html5-plain-wordmark"></i></div>
+          <div class="devicon"><i class="devicon-javascript-plain"></i></div>
+          <div class="devicon"><i class="devicon-angularjs-plain"></i></div>
+          <div class="devicon"><i class="devicon-nodejs-plain"></i></div>
+          <div class="devicon"><i class="devicon-mongodb-plain-wordmark"></i></div>
           <h4 class='text-center'>
             <a href=""
               scroll-to="projects">
@@ -108,7 +106,7 @@
       <div ng-repeat="project in projectData">
         <div class="project-box padding-box">
           
-          <div class="flex-space-around">
+          <div class="flex-space-around wrap-at-1000">
             <div class="half-containers">
               <h3>{{ project.name }}</h3>
               <p>{{ project.description }}</p>
