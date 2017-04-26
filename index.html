@@ -27,16 +27,18 @@
 <body ng-controller="HomeCtrl">
 
   <!-- Banner -->
-  <div class="container banner flex-center">
+  <div class="banner flex-center">
     <h5 class="title">Web Developer</h5>
     <h1 class="name">Justin Hoang</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua.</p>
     <a href=""
       scroll-to="aboutMe">
-      <h4>learn more ></h4>
+      <h4 class="text-center">learn more ></h4>
     </a>
   </div>
+
+<hr>
 
   <!-- About Me -->
   <section>
@@ -49,7 +51,7 @@
       <div class="half-containers">
         <p>I am a JavaScript developer with primary experience across the MEAN stack. I enjoy navigating through complexity and cooperating with other developers to spec out and deliver quality code.</p>
         <p>Apart from web programming, my passions include team-based games, old-school anime, and conversations around the fantasy/sci-fi genre.</p>
-        <h4>
+        <h4 class="text-center">
           <a href=""
             scroll-to="skills">
             skills &#38; competencies >   
@@ -58,10 +60,12 @@
       </div>
     </div>
   </section>
-  {{skills.languages}}
+
+<hr>
+
   <!-- Skills -->
-  <section>
-    <div id="skills" class="container padding-box">
+  <section id="skills">
+    <div class="padding-box">
       <h1>Skills</h1>
       <div class="flex-space-around">
         
@@ -81,7 +85,7 @@
           <span class="devicon"><i class="devicon-angularjs-plain"></i></span>
           <span class="devicon"><i class="devicon-nodejs-plain"></i></span>
           <span class="devicon"><i class="devicon-mongodb-plain-wordmark"></i></span>
-          <h4>
+          <h4 class='text-center'>
             <a href=""
               scroll-to="projects">
               view projects >
@@ -92,55 +96,65 @@
     </div>
   </section>
 
+<hr>
+
   <!-- Projects -->
   <section>
-    <h1 id="projects">Projects</h1>
-    <div ng-repeat="project in projectData">
-      <div class="container project-box padding-box">
-        
-        <div class="project-box-top flex-space-around">
-          <div class="half-containers">
-            <h3>{{ project.name }}</h3>
-            <p>{{ project.description }}</p>
-            <div ng-if="project.contributors.length > 0">
-              <h5>contributors</h5>
-              <p ng-repeat="contributor in project.contributors">
-                {{ contributor }} 
-              </p>
+    <div id="projects" class="padding-box">
+      <h1>Projects</h1>
+      <div ng-repeat="project in projectData">
+        <div class="project-box padding-box">
+          
+          <div class="flex-space-around">
+            <div class="half-containers">
+              <h3>{{ project.name }}</h3>
+              <p>{{ project.description }}</p>
+              <div ng-if="project.contributors.length > 0">
+                <h5>contributors</h5>
+                <p>
+                  <span ng-repeat="contributor in project.contributors">
+                    {{ contributor }} 
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div class="half-containers">
+              <a href="{{ project.liveSite }}">
+                <video autoplay loop>
+                  <!-- <source ng-src="{{ project.videoLink }}" type="video/mp4"> -->
+                </video>
+              </a>
             </div>
           </div>
-          <div class="half-containers">
-            <video autoplay loop>
-              <!-- <source ng-src="{{ project.videoLink }}" type="video/mp4"> -->
-            </video>
-          </div>
-        </div>
-                
+                  
 
-        <div class="flex-center">
-          <div class="project-info">
-            <h5>roles</h5>
-            <p ng-repeat="role in project.roles">{{ role }}</p>
-          </div>
-          <div class="project-info">
-            <h5>built with</h5> 
-            <p ng-repeat="tech in project.techs">{{ tech }}</p>
-          </div>
-          <div class="project-info">
-            <h5>more</h5>
-            <p><a href="{{ project.github }}">GitHub <i class="fa fa-github" aria-hidden="true"></i></a></p>
-            <p><a href="{{ project.liveSite }}">Live Site <i class="fa fa-share" aria-hidden="true"></i></a></p>
+          <div class="flex-center project-info-box">
+            <div class="project-info">
+              <h5>roles</h5>
+              <p ng-repeat="role in project.roles">{{ role }}</p>
+            </div>
+            <div class="project-info">
+              <h5>built with</h5> 
+              <p ng-repeat="tech in project.techs">{{ tech }}</p>
+            </div>
+            <div class="project-info">
+              <h5>more</h5>
+              <p><a href="{{ project.github }}">GitHub <i class="fa fa-github" aria-hidden="true"></i></a></p>
+              <p><a href="{{ project.liveSite }}">Live Site <i class="fa fa-share" aria-hidden="true"></i></a></p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+<hr>
+
   <!-- Connect -->
   <section>
-    <div class="container padding-box inwell">
+    <div class="padding-box inwell">
       <h1>Connect</h1>
-      <p class="connect-text">I&#39;m glad you stopped by. Follow me on GitHub or shoot me an email.</p>
+      <p class="text-center">I&#39;m glad you stopped by. Follow me on GitHub or shoot me an email.</p>
 
       <div class="flex-space-around padding-box">
         <a class="flex-center align-center" href="https://github.com/jnhustin"><i class="fa fa-3x fa-github" aria-hidden="true"></i> GitHub</a>

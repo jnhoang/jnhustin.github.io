@@ -13,7 +13,7 @@ var projectData = {
     name: 'Game Share'
   , description: 'GameShare is inspired by a childhood of lending and talking about games with friends in grade school. A user is able to invite friends to a GameShare community. Within a community a user as able to lend/borrow games from other community members. GameShare offers the ability for users to track the games they have borrowed and loaned.'
   , roles: ['designer', 'developer']
-  , techs: ['CSS', 'HTML', 'JavaScript', 'Node', 'Express', 'Auth(Bcrypt, Passport)', 'SQL', 'PostgreSQL', 'Sequelize', 'Internet Game Database(IGDB) API']
+  , techs: ['CSS', 'HTML', 'JavaScript', 'Node', 'Express', 'Auth(Bcrypt, Passport)', 'SQL', 'PostgreSQL', 'Sequelize', 'Internet Game Database API']
   , contributors: []
   , github: 'https://github.com/jnhustin/GameShare'
   , liveSite: 'https://jnhustingameshare.herokuapp.com/'
@@ -21,10 +21,10 @@ var projectData = {
   }
 , travelSensei: {
     name: 'Travel-Sensei'
-  , description: 'One day Hackathon app. Connects The Yelp and QPX API\'s to offer highlights to Japan\'s local flavors and destinations.'
+  , description: 'One day Hackathon app. Connects The Yelp and QPX(Google Flights) API\'s to offer highlights to Japan\'s local flavors and destinations.'
   , roles: ['Team lead', 'developer', 'database design', 'backend development']
-  , techs: ['CSS', 'HTML', 'JavaScript', 'Node', 'Express', 'Auth(Bcrypt, Passport)', 'AngularJS', 'MongoDB', 'Mongoose', 'Yelp & QPX(Google flights) API']
-  , contributors: ['Mark Woo', 'Nic Vogt']
+  , techs: ['CSS', 'HTML', 'JavaScript', 'Node', 'Express', 'Auth(Bcrypt, Passport)', 'AngularJS', 'MongoDB', 'Mongoose', 'Yelp & QPX API']
+  , contributors: ['Mark Woo, ', 'Nic Vogt']
   , github: 'https://github.com/jnhustin/Travel-Sensei'
   , liveSite: 'https://travelsensei.herokuapp.com/cities/tokyo'
   , videoLink: './vids/travel-sensei-demo.mp4'
