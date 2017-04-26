@@ -46,3 +46,9 @@ a {
 hr {
   margin: 0;
 }
+img {
+  height: 50%;
+  width: 50%;
+  border-radius: 50%;
+  box-shadow: 0 0 5px black;
+}

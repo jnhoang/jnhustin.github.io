@@ -32,13 +32,13 @@
 
 /*About Section*/
 #aboutMe {
-  background-color: #FFE9BE;
+  background-color: rgba(214, 198, 138, 0.62);
 }
 
 
 /*Skills Section*/
 #skills {
-  background-color: #DED7C7;
+  background-color: #CDE8E5;
 }
 .half-containers {
   display: inline-block;
@@ -67,10 +67,10 @@
 
 /*Projects Section*/
 #projects {
-  background-color: #CDE8E5;
+  background-color: #DED7C7;
 }
 .project-box {
-  background-color: whitesmoke;
+  background-color: white;
   box-shadow: 1px 3px 2px grey;
   border-radius: 10px;
   border: 1px solid black;
@@ -93,6 +93,9 @@ video {
   margin: 0 30px;
 }
 /*Connect Section*/
+#contact {
+  background-color: whitesmoke;
+}
 .text-center {
   text-align: center;
 }
