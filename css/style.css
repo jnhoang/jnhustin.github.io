@@ -2,8 +2,22 @@
 .container {
   margin: 50px 0;
 }
+.flex-center {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.flex-space-around {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.align-center {
+  align-items: center;
+}
 /*Banner Section*/
 .banner {
+  border: 1px solid red;
   padding: 20px;
   height: 500px;
   width: 100%;
@@ -17,16 +31,7 @@
   text-transform: uppercase;
   margin: 5px 0 25px 0;
 }
-.flex-center {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.flex-space-around {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
+
 /*About Section*/
 
 
@@ -35,6 +40,11 @@
 .half-containers {
   display: inline-block;
   width: 45%;
+}
+@media(max-width: 1000px) {
+  .half-containers {
+    width: 100%;
+  }
 }
 .devicon {
   font-size: 8em;
@@ -50,12 +60,14 @@
   margin: 50px 25px;
 }
 .padding-box {
-  padding: 20px;
+  padding: 50px;
 }
 .project-box-top-half {
   width: 49%;
 }
 video {
+  border: 1px solid blue;
+  box-sizing: border-box;
   height: 100%;
   width: 100%;
 }
@@ -64,5 +76,7 @@ video {
 }
 
 /*Connect Section*/
-
+.connect-text {
+  text-align: center;
+}
 
