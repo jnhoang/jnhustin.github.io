@@ -1,8 +1,9 @@
 angular
-.module('Portfolio', [])
+.module('Portfolio', ['smoothScroll'])
 .controller('HomeCtrl', [
   '$scope'
-, function($scope) {
+, 'smoothScroll'
+, function($scope, smoothScroll) {
     $scope.projectData = projectData;
     $scope.skills = skills;
 
