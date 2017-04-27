@@ -74,7 +74,9 @@
         <div class="half-containers">
           <div ng-repeat="(key, values) in skills">
             <h2>{{ key }}</h2>
-            <span ng-repeat="value in values">{{ value }}</span>
+            <p>
+              <span ng-repeat="value in values">{{ value }}</span>
+            </p>
           </div>
         </div>
 
@@ -104,8 +106,8 @@
     <div id="projects" class="padding-box">
       <h1>Projects</h1>
       <div ng-repeat="project in projectData">
-        <div class="project-box padding-box">
-          
+        <div class="project-box padding-box">    
+         
           <div class="flex-space-around wrap-at-1000">
             <div class="half-containers">
               <h3>{{ project.name }}</h3>
@@ -119,31 +121,48 @@
                 </p>
               </div>
             </div>
-            <div class="half-containers">
-              <a href="{{ project.liveSite }}">
-                <video autoplay loop>
-                  <!-- <source ng-src="{{ project.videoLink }}" type="video/mp4"> -->
-                </video>
-              </a>
-            </div>
-          </div>
-                  
 
-          <div class="flex-center project-info-box">
-            <div class="project-info">
-              <h5>roles</h5>
-              <p ng-repeat="role in project.roles">{{ role }}</p>
-            </div>
-            <div class="project-info">
-              <h5>built with</h5> 
-              <p ng-repeat="tech in project.techs">{{ tech }}</p>
-            </div>
-            <div class="project-info">
-              <h5>more</h5>
+
+            <div class="half-containers">
+              <h5>Roles</h5>
+              <p>
+                <span ng-repeat="role in project.roles">{{role}}</span>
+              </p>
+              <h5>Techs</h5>
+              <p>
+                <span ng-repeat="tech in project.techs">{{tech}}</span>
+              </p>
+              <h5>More</h5>
               <p><a href="{{ project.github }}">GitHub <i class="fa fa-github" aria-hidden="true"></i></a></p>
               <p><a href="{{ project.liveSite }}">Live Site <i class="fa fa-share" aria-hidden="true"></i></a></p>
             </div>
+            <!-- <div class="flex-center project-info-box">
+              <div class="project-info">
+                <h5>roles</h5>
+                <p ng-repeat="role in project.roles">{{ role }}</p>
+              </div>
+              <div class="project-info">
+                <h5>built with</h5> 
+                <p ng-repeat="tech in project.techs">{{ tech }}</p>
+              </div>
+              <div class="project-info">
+                <h5>more</h5>
+                <p><a href="{{ project.github }}">GitHub <i class="fa fa-github" aria-hidden="true"></i></a></p>
+                <p><a href="{{ project.liveSite }}">Live Site <i class="fa fa-share" aria-hidden="true"></i></a></p>
+              </div>
+            </div> -->
+
+
           </div>
+
+          <div>
+            <a href="{{ project.liveSite }}">
+                <video autoplay loop>
+                  <source ng-src="{{ project.videoLink }}" type="video/mp4">
+                </video>
+              </a>
+          </div>
+          
         </div>
       </div>
     </div>

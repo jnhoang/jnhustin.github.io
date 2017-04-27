@@ -91,13 +91,6 @@
 .padding-box {
   padding: 50px;
 }
-
-video {
-  border: 1px solid blue;
-  box-sizing: border-box;
-  height: 100%;
-  width: 100%;
-}
 .project-info-box {
     margin: 40px 0 0 0;
 }
