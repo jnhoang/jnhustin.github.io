@@ -1,13 +1,13 @@
 var projectData = {
-  carcassonne: {
-    name: 'Carcasonne Castles'
-  , description: 'A competitive two player game set in the Southern French landscape and inspired by the board game Carcassonne. Opponents take turns drawing tiles to build a landscape of castles, strategically assigning builders to castles under construction. Clever utilization of builders will earn a player more points.'
-  , roles: ['designer', 'developer', 'game logic']
-  , techs: ['HTML/CSS', 'JavaScript', 'jQuery']
+  animoos: {
+    name: 'Animoos'
+  , description: 'Animoos is a passion project that incorporated anime into a fun project to learn a grid system library. I chose Materialize as it offers a clean, modern and responsive ui. The site offers the ability to check popular anime titles, or what\'s currently the show in the season.'
+  , roles: ['developer', 'designer']
+  , techs: ['HTML/CSS', 'JavaScript', 'Node.js/Express', 'AngularJS', 'Anilist API']
   , contributors: []
-  , github: 'https://github.com/jnhustin/Carcassonne-Castles'
-  , liveSite: 'https://jnhustin.github.io/Carcassonne-Castles/'
-  , videoLink: './vids/carcassonne-demo.mp4'
+  , github: 'https://github.com/jnhustin/Animoos'
+  , liveSite: 'https://animoos.herokuapp.com/'
+  , videoLink: './vids/animoos-demo.mp4'
   }
 , gameshare: {
     name: 'Game Share'
@@ -39,15 +39,15 @@ var projectData = {
   , liveSite: 'http://texpert.herokuapp.com/'
   , videoLink: 'vids/texpert-demo.mp4'
   }
-, animoos: {
-    name: 'Animoos'
-  , description: 'Animoos is a passion project that incorporated anime into a fun project to learn a grid system library. I chose Materialize as it offers a clean, modern and responsive ui. The site offers the ability to check popular anime titles, or what\'s currently the show in the season.'
-  , roles: ['developer', 'designer']
-  , techs: ['HTML/CSS', 'JavaScript', 'Node.js/Express', 'AngularJS', 'Anilist API']
+, carcassonne: {
+    name: 'Carcasonne Castles'
+  , description: 'A competitive two player game set in the Southern French landscape and inspired by the board game Carcassonne. Opponents take turns drawing tiles to build a landscape of castles, strategically assigning builders to castles under construction. Clever utilization of builders will earn a player more points.'
+  , roles: ['designer', 'developer', 'game logic']
+  , techs: ['HTML/CSS', 'JavaScript', 'jQuery']
   , contributors: []
-  , github: 'https://github.com/jnhustin/Animoos'
-  , liveSite: 'https://animoos.herokuapp.com/'
-  , videoLink: './vids/animoos-demo.mp4'
+  , github: 'https://github.com/jnhustin/Carcassonne-Castles'
+  , liveSite: 'https://jnhustin.github.io/Carcassonne-Castles/'
+  , videoLink: './vids/carcassonne-demo.mp4'
   } 
 };
 
