@@ -61,8 +61,8 @@
 }
 
 @media(max-width: 1000px) {
-  h3 {
-    margin:0 0 36px 0;
+  .banner-description {
+    width: 80%;
   }
   .half-containers {
     width: 100%;
@@ -74,6 +74,12 @@
   .padding-box {
     padding: 25px 50px;
   }
+  .-video {
+    order: 1;
+  }
+  .-description {
+    order: 2;
+  }
   .wrap-at-1000 {
     flex-wrap: wrap;
   }
@@ -83,8 +89,9 @@
 }
 .devicon {
   display: inline-block;
-  font-size: 8em;
+  font-size: 6em;
   margin: 15px;
+  opacity: 0.7;
 }
 .divider {
   align-items: center;
