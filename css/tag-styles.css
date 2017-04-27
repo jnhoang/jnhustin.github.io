@@ -58,8 +58,12 @@ img {
 }
 video {
   box-sizing: border-box;
-  height: 100%;
-  width: 100%;
+  margin: -25px 0 1px -50px;
+  height: 110%;
+  width: 125%;
+}
+.-video {
+  overflow: hidden;
 }
 h4 > a {
   position: relative;
@@ -94,5 +98,6 @@ footer {
 }
 
 footer p {
+  font-size: 14px;
   padding: 10px 20px;
 }
