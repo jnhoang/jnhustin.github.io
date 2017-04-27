@@ -32,13 +32,16 @@
   <!-- Banner -->
   <div class="banner flex-center large-padding">
     <h5 class="title">Web Developer</h5>
-    <h1 class="name">Justin Hoang</h1>
-    <p class="text-center width-75">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    <h1 class="name">Justin <span class="-red">H</span>oang</h1>
+    <p class="text-center width-50 text-subtle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua.</p>
-    <a href=""
-      scroll-to="aboutMe">
-      <h4 class="text-right -sky">learn more ></h4>
-    </a>
+    
+    <h4 class="text-right -sky">
+      <a href=""
+        scroll-to="aboutMe">
+        learn more >  
+      </a>
+    </h4>
   </div>
 
 <hr class="double-underline">
@@ -47,7 +50,7 @@
   <section>
     <div id="aboutMe" class="banner large-padding">
       <h1>About</h1>
-      <div class="flex-space-between wrap-at-1000">
+      <div class="flex-space-between wrap-at-1000 align-center">
         <div class="text-center half-containers">
           <img src="http://res.cloudinary.com/dxumleria/image/upload/v1493243170/20170426_135409_t6dbrt.jpg">
         </div>
@@ -137,18 +140,21 @@
           <div class="project-info-box">
             <div class="project-info">
               <h5>roles</h5>
-              <p ng-repeat="role in project.roles">{{ role }}</p>
+              <p class="text-subtle" 
+                ng-repeat="role in project.roles">{{ role }}</p>
             </div>
             <div class="project-info">
               <h5>built with</h5> 
-              <p ng-repeat="tech in project.techs">{{ tech }}</p>
+              <p class="text-subtle"
+                ng-repeat="tech in project.techs">{{ tech }}</p>
             </div>
             <div
               class="project-info"
               ng-if="project.contributors.length > 0">
               <h5>contributors</h5>
               <p>
-                <span ng-repeat="contributor in project.contributors">
+                <span class="text-subtle"
+                  ng-repeat="contributor in project.contributors">
                   {{ contributor }} 
                 </span>
               </p>
@@ -156,7 +162,8 @@
               
           </div>
 
-        <div class="divider flex-center">
+        <div class="divider flex-center"
+          ng-if="!$last">
           <div ng-repeat="item in [1,2,3]" class="-circle"></div>
         </div>
       </div>
@@ -167,14 +174,26 @@
 
   <!-- Connect -->
   <section>
-    <div id="contact" class="padding-box inwell">
+    <div id="contact" class="padding-box inwell large-padding">
       <h1>Connect</h1>
-      <p class="text-center">I&#39;m glad you stopped by. Follow me on GitHub or shoot me an email.</p>
+      <p class="text-center text-subtle">I&#39;m glad you stopped by.<br> Follow me on GitHub or shoot me an email.</p>
       <a class="flex-center align-center -blue" 
         href="#"><h4>Download Resume ></h4></a>
-      <div class="flex-space-around padding-box">
-        <a class="flex-center align-center" href="https://github.com/jnhustin"><i class="fa fa-3x fa-github" aria-hidden="true"></i> GitHub</a>
-        <a class="flex-center align-center" href="mailto:jnhustin@gmail.com?Subject=Hello%20 friend"><i class="fa fa-3x fa-envelope-o" aria-hidden="true"></i> Email</a>
+      
+      <div class="flex-center padding-box">
+        
+        <a class="social-icon text-subtle" 
+          href="https://github.com/jnhustin">
+          <i class="fa fa-4x fa-github text-subtle" aria-hidden="true"></i>
+        </a>
+        <a class="social-icon text-subtle" 
+          href="mailto:jnhustin@gmail.com?Subject=Hello%20 friend">
+          <i class="fa fa-4x fa-at text-subtle" aria-hidden="true"></i>
+        </a>
+        <a class="social-icon text-subtle"
+          href="https://www.linkedin.com/in/jnhustin/">
+          <i class="fa fa-4x fa-linkedin text-subtle" aria-hidden="true"></i>
+        </a>
       </div>
 
     </div>

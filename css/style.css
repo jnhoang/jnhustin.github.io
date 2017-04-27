@@ -23,6 +23,9 @@
 .large-padding {
   padding: 100px;
 }
+.text-subtle {
+  opacity: 0.7;
+}
 /*Banner Section*/
 .banner {
   flex-direction: column;
@@ -42,8 +45,8 @@
   border-left: none;
   border-right: none;
 }
-.width-75 {
-  width: 75%;
+.width-50 {
+  width: 50%;
 }
 /*About Section*/
 #aboutMe {
@@ -118,13 +121,15 @@
 }
 
 /*Connect Section*/
-#contact {
-}
 .text-center {
   text-align: center;
 }
 .text-right {
   text-align: right;
+}
+.social-icon {
+  color: black;
+  margin: 20px;
 }
 /*HR classes*/
 .-blue {
