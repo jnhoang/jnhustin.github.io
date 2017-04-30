@@ -169,3 +169,58 @@
     text-align: left;
   }
 }
+
+
+
+/*
+  Nav Override
+*/
+
+.cd-3d-nav-trigger span, .cd-3d-nav-trigger span::before, .cd-3d-nav-trigger span::after {
+  background-color: black;
+}
+.nav-is-visible .cd-3d-nav-trigger span::before, .nav-is-visible .cd-3d-nav-trigger span::after {
+  background-color: black;
+}
+body {
+  background-color: white;
+}
+.cd-3d-nav-container {
+  background-color: transparent;
+}
+.cd-3d-nav {
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 17%, rgba(255,255,255,0.23) 81%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 17%,rgba(255,255,255,0.23) 81%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 17%,rgba(255,255,255,0.23) 81%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+}
+.cd-3d-nav .cd-selected a {
+  background-color: white;
+}
+.cd-3d-nav .cd-selected a {
+  background-color: transparent;
+}
+.no-touch .cd-3d-nav .cd-selected a:hover {
+  background-color: white;
+}
+.no-touch .cd-3d-nav a:hover {
+  background-color: white;
+}
+.cd-3d-nav .cd-selected a::before {
+  background-position: 0 0;
+}
+.cd-marker {
+  top: 0;
+}
+.cd-3d-nav::after {
+  background-color: transparent;
+}
+
+nav {
+  z-index: 50;
+}
+@media only screen and (min-width: 768px) {
+  .cd-3d-nav a {
+    color: black;
+  }
+}

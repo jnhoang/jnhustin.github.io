@@ -8,9 +8,6 @@ angular
     $scope.skills = skills;
     $scope.visible = false;
 
-    $scope.toggleVisible = function() {
-      $scope.visible = $scope.visible ? false : true;
-    }
 
     for (var section in skills) {
       var section = skills[section];
