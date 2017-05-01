@@ -230,26 +230,25 @@ body {
 nav {
   z-index: 500;
 }
-
 .color-1 {
-  color: #24B694;
-  background-color: #24B694;
-}
-.color-2 {
   color: #4C439E;
   background-color: #4C439E;
 }
-.color-3 {
+.color-2 {
   color: #D22042;
   background-color: #D22042;
 }
-.color-4 {
+.color-3 {
   color: #24B694;
   background-color: #24B694;
 }
-.color-5 {
+.color-4 {
   color: #F98948;
   background-color: #F98948;
+}
+.color-5 {
+  color: #24B694;
+  background-color: #24B694;
 }
 @media only screen and (min-width: 768px) {
   .cd-3d-nav a {
