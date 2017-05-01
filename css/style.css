@@ -89,7 +89,7 @@
 }
 .project-info {
   padding: 25px;
-  width: 225px;
+  width: 235px;
 }
 
 /*Connect Section*/
@@ -104,20 +104,20 @@
   margin: 20px;
 }
 /*HR classes*/
-.-blue {
-  color: #0A47D1;
+.-accent1 { /*Orange*/
+  color: #F98948;
 }
-.-sky {
-  color: #00ABD8;
+.-accent2 { /*Aqua*/
+  color: #24B694;
 }
-.-green {
-  color: #008972;
+.-accent3 { /*Red*/
+  color: #D22042;
 }
-.-yellow {
-  color: #EFC028;
+.-accent4 { /*Purple*/
+  color: #4C439E;
 }
-.-red {
-  color: #F2572D;
+.-accent5 { /*Green*/ 
+  color: #00BA7C;
 }
 
 @media(max-width: 1000px) {
@@ -171,11 +171,13 @@
 }
 
 
-
 /*
   Nav Override
 */
-
+.cd-header {
+  z-index: 500;
+  position: fixed;
+}
 .cd-3d-nav-trigger span, .cd-3d-nav-trigger span::before, .cd-3d-nav-trigger span::after {
   background-color: black;
 }
@@ -201,11 +203,17 @@ body {
   background-color: transparent;
 }
 .no-touch .cd-3d-nav .cd-selected a:hover {
-  background-color: white;
+  background: -moz-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0.5)); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0.5)); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0.5)); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+  cursor: pointer;
 }
 .no-touch .cd-3d-nav a:hover {
-  background-color: white;
+  background-color: rgba(255,255,255, 0.5);
+  cursor: pointer;
 }
+
 .cd-3d-nav .cd-selected a::before {
   background-position: 0 0;
 }
@@ -217,7 +225,28 @@ body {
 }
 
 nav {
-  z-index: 50;
+  z-index: 500;
+}
+
+.color-1 {
+  color: #24B694;
+  background-color: #24B694;
+}
+.color-2 {
+  color: #4C439E;
+  background-color: #4C439E;
+}
+.color-3 {
+  color: #D22042;
+  background-color: #D22042;
+}
+.color-4 {
+  color: #24B694;
+  background-color: #24B694;
+}
+.color-5 {
+  color: #F98948;
+  background-color: #F98948;
 }
 @media only screen and (min-width: 768px) {
   .cd-3d-nav a {
