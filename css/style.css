@@ -169,7 +169,11 @@
     text-align: left;
   }
 }
-
+@media(max-width: 850px) {
+  footer {
+    flex-wrap: wrap;
+  }
+}
 
 /*
   Nav Override
