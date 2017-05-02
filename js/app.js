@@ -8,10 +8,10 @@ angular
     $scope.skills = skills;
     $scope.visible = false;
 
-    
     $scope.pauseOrPlay = function(e) {
       var video = angular.element(e.srcElement)[0];
       video.paused ? video.play() : video.pause();
+      this.project.paused = video.paused ? true : false;
     }
     
     // Adds comma between list items for horizontal listing

@@ -8,6 +8,7 @@ var projectData = {
   , github: 'https://github.com/jnhustin/Animoos'
   , liveSite: 'https://animoos.herokuapp.com/'
   , videoLink: './vids/animoos-demo.mp4'
+  , paused: true
   }
 , gameshare: {
     name: 'Game Share'
@@ -18,6 +19,7 @@ var projectData = {
   , github: 'https://github.com/jnhustin/GameShare'
   , liveSite: 'https://jnhustingameshare.herokuapp.com/'
   , videoLink: './vids/gameshare-demo.mp4'
+  , paused: true
   }
 , travelSensei: {
     name: 'Travel-Sensei'
@@ -28,6 +30,7 @@ var projectData = {
   , github: 'https://github.com/jnhustin/Travel-Sensei'
   , liveSite: 'https://travelsensei.herokuapp.com/cities/tokyo'
   , videoLink: './vids/travel-sensei-demo.mp4'
+  , paused: true
   }
 , texpert: {
     name: 'Texpert'
@@ -38,6 +41,7 @@ var projectData = {
   , github: 'https://github.com/jnhustin/texpert'
   , liveSite: 'http://texpert.herokuapp.com/'
   , videoLink: 'vids/texpert-demo.mp4'
+  , paused: true
   }
 , carcassonne: {
     name: 'Carcasonne Castles'
@@ -48,6 +52,7 @@ var projectData = {
   , github: 'https://github.com/jnhustin/Carcassonne-Castles'
   , liveSite: 'https://jnhustin.github.io/Carcassonne-Castles/'
   , videoLink: './vids/carcassonne-demo.mp4'
+  , paused: true
   } 
 };
 
