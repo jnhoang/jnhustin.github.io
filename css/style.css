@@ -52,6 +52,7 @@
 /*Skills Section*/
 .half-containers {
   display: inline-block;
+  position: relative;
   width: 50%;
 }
 
@@ -90,7 +91,17 @@
   padding: 25px;
   width: 235px;
 }
-
+.play-button {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.3);
+  pointer-events: none;
+  color: white;
+}
 /*Connect Section*/
 .text-center {
   text-align: center;

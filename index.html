@@ -156,37 +156,38 @@
             </div>
 
             <div class="half-containers -video">
-              <video autoplay loop controls>
+              <!-- <div class="play-button"><i class="fa fa-5x fa-play" aria-hidden="true"></i></div> -->
+              <video autoplay loop ng-click="pauseOrPlay($event)">
                 <source ng-src="{{ project.videoLink }}" type="video/mp4">
               </video>
             </div>
 
           </div>
 
-            <div class="project-info-box wrap-at-700">
-              <div class="project-info">
-                <h5>roles</h5>
-                <p class="text-subtle" 
-                  ng-repeat="role in project.roles">{{ role }}</p>
-              </div>
-              <div class="project-info">
-                <h5>built with</h5> 
-                <p class="text-subtle"
-                  ng-repeat="tech in project.techs">{{ tech }}</p>
-              </div>
-              <div
-                class="project-info"
-                ng-if="project.contributors.length > 0">
-                <h5>contributors</h5>
-                <p>
-                  <span class="text-subtle"
-                    ng-repeat="contributor in project.contributors">
-                    {{ contributor }} 
-                  </span>
-                </p>
-              </div>
-                
+          <div class="project-info-box wrap-at-700">
+            <div class="project-info">
+              <h5>roles</h5>
+              <p class="text-subtle" 
+                ng-repeat="role in project.roles">{{ role }}</p>
             </div>
+            <div class="project-info">
+              <h5>built with</h5> 
+              <p class="text-subtle"
+                ng-repeat="tech in project.techs">{{ tech }}</p>
+            </div>
+            <div
+              class="project-info"
+              ng-if="project.contributors.length > 0">
+              <h5>contributors</h5>
+              <p>
+                <span class="text-subtle"
+                  ng-repeat="contributor in project.contributors">
+                  {{ contributor }} 
+                </span>
+              </p>
+            </div>
+              
+          </div>
 
           <div class="divider flex-center"
             ng-if="!$last">
@@ -204,8 +205,10 @@
         <h1>Connect</h1>
         <p class="text-center text-subtle">I&#39;m glad you stopped by.<br> Follow me on GitHub or shoot me an email.</p>
         <h4 class="flex-center align-center">
-          <a class="-accent1" 
-          href="https://drive.google.com/file/d/0BxEYM4aqzQ9lVDAta2dSR0hNWmc/view?usp=sharing">Download Resume ></a>
+          <a class="-accent1"
+            target="_blank" 
+            href="https://drive.google.com/file/d/0BxEYM4aqzQ9lVDAta2dSR0hNWmc/view?usp=sharing">Download Resume >
+          </a>
         </h4>
         
         <div class="flex-center padding-box">
