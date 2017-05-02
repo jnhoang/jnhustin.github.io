@@ -93,8 +93,10 @@
 }
 .play-button {
   position: absolute;
-  height: 100%;
-  width: 100%;
+  height: 63%;
+  width: 73%;
+  left: 16%;
+  top: 6%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -129,7 +131,22 @@
 .-accent5 { /*Green*/ 
   color: #00BA7C;
 }
-
+@media (min-width: 1001px) and (max-width: 1080px) {
+  .play-button {
+    height: 53%;
+    width: 71%;
+    left: 15%;
+    top: 11%;
+  }
+}
+@media (min-width: 1001px) and (max-width: 1080px) {
+  .play-button {
+    height: 59%;
+    width: 71%;
+    left: 15%;
+    top: 6%;
+  }
+}
 @media(max-width: 1000px) {
   img {
     margin: 0 0 50px 0;
@@ -162,6 +179,12 @@
   .skill-container {
     display: inline-block;
   }
+  .play-button {
+    height: 59%;
+    width: 72%;
+    left: 19%;
+    top: 9%;
+  }
 }
 @media(max-width: 700px) {
   .wrap-at-700 {
@@ -178,6 +201,12 @@
   footer {
     flex-wrap: wrap;
   }
+  .play-button {
+    height: 60%;
+    width: 72%;
+    left: 17%;
+    top: 7%;
+  }
 }
 @media(max-width: 585px) {
   .project-info {
@@ -187,5 +216,11 @@
     margin: 0;
     height: 100%;
     width: 100%;
+  }
+  .play-button {
+    height: 60%;
+    width: 58%;
+    left: 21%;
+    top: 7%;
   }
 }
