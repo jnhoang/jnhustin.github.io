@@ -52,7 +52,7 @@ var projectData = {
 };
 
 var skills = {
-  Languages: ['CSS3', 'HTML5', 'JavaScript', 'Python', 'Ruby']
+  Languages: ['HTML5', 'CSS3', 'JavaScript', 'Python', 'Ruby']
 , Frameworks: ['AngularJS', 'Express', 'Node.js', 'Rails', 'React', 'jQuery', 'jQuery UI', 'Bootstrap', 'Materialize']
 , Databases: ['ActiveRecord', 'MongoDB', 'Mongoose', 'PostgreSQL', 'Sequelize']
 , Other: ['Agile', 'AJAX', 'Authentication', 'JSON', 'RESTful routes', 'Sessions & Passport', 'TDD', 'Trello']
