@@ -104,6 +104,7 @@
   pointer-events: none;
   color: white;
 }
+
 /*Connect Section*/
 .text-center {
   text-align: center;
@@ -114,6 +115,12 @@
 .social-icon {
   color: black;
   margin: 20px;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+.social-icon:hover {
+  color: #F98948;
 }
 /*HR classes*/
 .-accent1 { /*Orange*/
