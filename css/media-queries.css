@@ -1,49 +1,34 @@
-@media(max-width: 585px) {
-  video {
-    margin: 0;
-    height: 100%;
-    width: 100%;
-  }
+@media (min-width: 1350px) {
   .play-button {
-    height: 60%;
-    width: 58%;
-    left: 21%;
-    top: 7%;
+    height: 63%;
+    width: 73%;
+    left: 18%;
+    top: 8%;
   }
-}
-@media(max-width: 700px) {
-  .wrap-at-700 {
-    flex-wrap: wrap;
+  .project-container {
+    height : 600px;
+    flex-flow: column wrap;
   }
-  .large-padding {
-    padding: 50px;
-  }
-  p {
-    text-align: left;
-  }
-  .-roles {
+  .-description {
     order: 1;
   }
-  .-tech {
+  .project-info-box {
+    width: 50%;
     order: 2;
   }
-  .-contributors {
-    order: 0;
-    width: 100%;
+  .project-info {
+    padding: 0 25px 25px 25px;
+  }
+  .-video {
+    order: 3;
   }
 }
-@media(max-width: 850px) {
-  footer {
-    flex-wrap: wrap;
-  }
+@media (min-width: 1001px) and (max-width: 1080px) {
   .play-button {
-    height: 60%;
-    width: 72%;
-    left: 17%;
-    top: 7%;
-  }
-  .project-info {
-    padding: 0 0 15px 0;
+    height: 59%;
+    width: 71%;
+    left: 15%;
+    top: 6%;
   }
 }
 @media(max-width: 1000px) {
@@ -87,36 +72,56 @@
     top: 9%;
   }
 }
-@media (min-width: 1001px) and (max-width: 1080px) {
+@media(max-width: 850px) {
+  footer {
+    flex-wrap: wrap;
+  }
   .play-button {
-    height: 59%;
-    width: 71%;
-    left: 15%;
-    top: 6%;
-  }
-}
-@media (min-width: 1350px) {
-  .play-button {
-    height: 63%;
-    width: 73%;
-    left: 18%;
-    top: 8%;
-  }
-  .project-container {
-    height : 600px;
-    flex-flow: column wrap;
-  }
-  .-description {
-    order: 1;
-  }
-  .project-info-box {
-    width: 50%;
-    order: 2;
+    height: 60%;
+    width: 72%;
+    left: 17%;
+    top: 7%;
   }
   .project-info {
-    padding: 0 25px 25px 25px;
+    padding: 0 0 15px 0;
   }
-  .-video {
-    order: 3;
+}
+@media only screen and (min-width: 768px) {
+  .cd-3d-nav a {
+    color: black;
+  }
+}
+@media(max-width: 700px) {
+  .wrap-at-700 {
+    flex-wrap: wrap;
+  }
+  .large-padding {
+    padding: 50px;
+  }
+  p {
+    text-align: left;
+  }
+  .-roles {
+    order: 1;
+  }
+  .-tech {
+    order: 2;
+  }
+  .-contributors {
+    order: 0;
+    width: 100%;
+  }
+}
+@media(max-width: 585px) {
+  video {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .play-button {
+    height: 60%;
+    width: 58%;
+    left: 21%;
+    top: 7%;
   }
 }

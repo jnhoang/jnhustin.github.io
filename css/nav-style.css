@@ -519,8 +519,3 @@ nav {
   color: #24B694;
   background-color: #24B694;
 }
-@media only screen and (min-width: 768px) {
-  .cd-3d-nav a {
-    color: black;
-  }
-}
