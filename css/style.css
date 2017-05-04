@@ -94,6 +94,14 @@
   pointer-events: none;
   color: white;
 }
+.github-link {
+  color: black;
+}
+.github-link:hover {
+  color: #F98948;
+  text-transform: none;
+}
+
 /*Connect Section*/
 .text-center {
   text-align: center;

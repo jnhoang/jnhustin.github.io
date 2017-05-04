@@ -142,19 +142,23 @@
       <div id="projects" class="large-padding">
         <h1>Projects</h1>
         <div ng-repeat="project in projectData">
-
-
           <div class="flex-space-around project-container">
             <!-- Project Description -->
             <div class="half-containers -description">
               <h3>{{ project.name }}</h3>
               <p>{{ project.description }}</p>
-              <h4 class="text-right">
-                <a class="-accent2"
-                  target="_blank"
-                  href="{{ project.liveSite }}">View Site ></a>
-              </h4>
-              
+              <div class="flex-space-between align-center">
+                <h5>
+                  <a class="flex-space-between align-center github-link"
+                    href="{{ project.github }}">
+                    <i class="fa fa-3x fa-github text-subtle" aria-hidden="true"></i></a>
+                </h5>
+                <h4 class="text-right">
+                  <a class="-accent2"
+                    target="_blank"
+                    href="{{ project.liveSite }}">View Site ></a>
+                </h4>  
+              </div>
             </div>
             <!-- Project Video -->
             <div class="half-containers -video">
@@ -191,83 +195,19 @@
               </div>
                 
             </div>
-         </div>
-
-         <div class="divider flex-center"
-           ng-if="!$last">
-           <div ng-repeat="item in [1,2,3]" class="-circle"></div>
-         </div>
-       </div>
-     </div>
-   </section>
-   <hr class="double-underline">
-
-
-          <!-- Projects -->
-   <!--  <section>
-      <div id="projects" class="large-padding">
-        <h1>Projects</h1>
-        <div ng-repeat="project in projectData">
-          <div class="flex-space-between wrap-at-1000"> -->
-            <!-- Project Description -->
-            <!-- <div class="half-containers -description">
-              <h3>{{ project.name }}</h3>
-              <p>{{ project.description }}</p>
-              <h4 class="text-right">
-                <a class="-accent2"
-                  target="_blank"
-                  href="{{ project.liveSite }}">View Site ></a>
-              </h4>
-              
-            </div> -->
-            <!-- Project Video -->
-            <!-- <div class="half-containers -video">
-              <div 
-                ng-if="project.paused"
-                class="play-button">
-                <i class="fa fa-4x fa-play" aria-hidden="true"></i></div>
-              <video loop ng-click="pauseOrPlay($event)">
-                <source ng-src="{{ project.videoLink }}" type="video/mp4">
-              </video>
-            </div>
-
-          </div> -->
-
-          <!-- Project Info -->
-          <!-- <div class="project-info-box wrap-at-700">
-            <div class="project-info">
-              <h5>roles</h5>
-              <p class="text-subtle" 
-                ng-repeat="role in project.roles">{{ role }}</p>
-            </div>
-            <div class="project-info">
-              <h5>built with</h5> 
-              <p class="text-subtle"
-                ng-repeat="tech in project.techs">{{ tech }}</p>
-            </div>
-            <div
-              class="project-info"
-              ng-if="project.contributors.length > 0">
-              <h5>contributors</h5>
-              <p>
-                <span class="text-subtle"
-                  ng-repeat="contributor in project.contributors">
-                  {{ contributor }} 
-                </span>
-              </p>
-            </div>
-              
           </div>
 
+          <!-- Bubble Dividers -->
           <div class="divider flex-center"
             ng-if="!$last">
             <div ng-repeat="item in [1,2,3]" class="-circle"></div>
           </div>
+
         </div>
       </div>
     </section>
- -->
-    <!-- <hr class="double-underline"> -->
+
+  <hr class="double-underline">
 
     <!-- Connect -->
     <section>
@@ -311,7 +251,7 @@
     </footer>
   </main>
   
-  <!-- Menu -->
+  <!-- Nav Menu -->
   <nav class="cd-3d-nav-container">
     <ul class="cd-3d-nav">
       <li class="cd-selected"><a scroll-to="aboutMe">About</a></li>
