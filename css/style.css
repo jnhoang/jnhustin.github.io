@@ -77,8 +77,6 @@
 }
 
 /*Projects Section*/
-#projects {
-}
 .project-box {
   border-radius: 10px;
   margin: 50px 25px;
@@ -104,7 +102,6 @@
   pointer-events: none;
   color: white;
 }
-
 /*Connect Section*/
 .text-center {
   text-align: center;
@@ -140,14 +137,6 @@
 }
 @media (min-width: 1001px) and (max-width: 1080px) {
   .play-button {
-    height: 53%;
-    width: 71%;
-    left: 15%;
-    top: 11%;
-  }
-}
-@media (min-width: 1001px) and (max-width: 1080px) {
-  .play-button {
     height: 59%;
     width: 71%;
     left: 15%;
@@ -168,6 +157,8 @@
     padding-top: 50px;
   }
   .project-info-box {
+    order: 3;
+    padding: 25px;
     margin: 20px 0 0 0;
   }
   .padding-box {
@@ -214,11 +205,12 @@
     left: 17%;
     top: 7%;
   }
+  .project-info {
+    padding: 0 0 15px 0;
+  }
 }
 @media(max-width: 585px) {
-  .project-info {
-    padding: 0;
-  }
+
   video {
     margin: 0;
     height: 100%;
@@ -231,6 +223,10 @@
     top: 7%;
   }
 }
+.test-container { 
+  display: flex;
+  flex-wrap: wrap;
+}
 @media (min-width: 1350px) {
   .play-button {
     height: 63%;
@@ -238,4 +234,22 @@
     left: 18%;
     top: 8%;
   }
+  .test-container {
+    height : 600px;
+    flex-flow: column wrap;
+  }
+  .-description {
+    order: 1;
+  }
+  .project-info-box {
+    width: 50%;
+    order: 2;
+  }
+  .project-info {
+    padding: 0 25px 25px 25px;
+  }
+  .-video {
+    order: 3;
+  }
 }
+
