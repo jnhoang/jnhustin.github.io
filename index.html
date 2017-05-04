@@ -167,18 +167,18 @@
             </div>
             <!-- Project Info -->
             <div class="project-info-box wrap-at-1000">
-              <div class="project-info">
+              <div class="project-info -roles">
                 <h5>roles</h5>
                 <p class="text-subtle" 
                   ng-repeat="role in project.roles">{{ role }}</p>
               </div>
-              <div class="project-info">
+              <div class="project-info -tech">
                 <h5>built with</h5> 
                 <p class="text-subtle"
                   ng-repeat="tech in project.techs">{{ tech }}</p>
               </div>
               <div
-                class="project-info"
+                class="project-info -contributors"
                 ng-if="project.contributors.length > 0">
                 <h5>contributors</h5>
                 <p>

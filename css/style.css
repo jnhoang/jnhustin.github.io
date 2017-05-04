@@ -194,6 +194,16 @@
   p {
     text-align: left;
   }
+  .-roles {
+    order: 1;
+  }
+  .-tech {
+    order: 2;
+  }
+  .-contributors {
+    order: 0;
+    width: 100%;
+  }
 }
 @media(max-width: 850px) {
   footer {
