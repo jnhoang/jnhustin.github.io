@@ -28,7 +28,7 @@ var projectData = {
   , techs: ['HTML/CSS', 'JavaScript', 'Node.js/Express', 'Passport.js', 'AngularJS', 'MongoDB/Mongoose', 'Yelp & QPX API']
   , contributors: ['Mark Woo, ', 'Nic Vogt']
   , github: 'https://github.com/jnhustin/Travel-Sensei'
-  , liveSite: 'https://travelsensei.herokuapp.com/cities/tokyo'
+  , liveSite: 'https://travelsensei.herokuapp.com'
   , videoLink: './vids/travel-sensei-demo.mp4'
   , paused: true
   }
