@@ -70,6 +70,8 @@ Main Components
 }
 
 .cd-3d-nav-trigger {
+  background-color: white;
+  border-radius: 50%;
   position: relative;
   float: right;
   height: 45px;
@@ -498,6 +500,10 @@ body {
 
 nav {
   z-index: 500;
+}
+.menu-background {
+  background: white;
+  border-radius: 50%;
 }
 .color-1 {
   color: #4C439E;
