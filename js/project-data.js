@@ -58,8 +58,8 @@ var projectData = {
 
 var skills = {
   Languages: ['HTML5', 'CSS3', 'JavaScript', 'Python', 'Ruby']
-, Frameworks: ['AngularJS', 'Express', 'Node.js', 'Rails', 'React', 'jQuery', 'jQuery UI', 'Bootstrap', 'Materialize']
+, Frameworks: ['AngularJS', 'Express', 'Node.js', 'Rails', 'React.js', 'jQuery', 'jQuery UI', 'Bootstrap', 'Materialize']
 , Databases: ['ActiveRecord', 'MongoDB', 'Mongoose', 'PostgreSQL', 'Sequelize']
-, Other: ['Agile', 'AJAX', 'Authentication', 'JSON', 'RESTful routes', 'Sessions & Passport', 'TDD', 'Trello']
+, Other: ['Agile', 'AJAX', 'Promises', 'Authentication', 'JSON', 'RESTful routes', 'Sessions & Passport', 'TDD', 'Trello', 'Jira']
 , 
 };
