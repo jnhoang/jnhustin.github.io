@@ -3,7 +3,7 @@ var projectData = {
     name: 'Animoos'
   , description: 'Animoos is a personal website around japanese cartoons/animation, aka anime. The site offers the ability to check popular anime titles, or what\'s currently the show in the season. Users can log in and create lists of their favorites or to be watched anime'
   , roles: ['developer', 'designer']
-  , techs: ['HTML/CSS', 'JavaScript', 'NodeJS/Express', 'AngularJS', 'Anilist API']
+  , techs: ['HTML/CSS', 'JavaScript', 'NodeJS/Express', 'AngularJS', 'MongoDB', 'Anilist API']
   , contributors: []
   , github: 'https://github.com/jnhustin/Animoos'
   , liveSite: 'https://animoos.herokuapp.com/'
