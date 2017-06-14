@@ -2,12 +2,15 @@ angular
 .module('Portfolio', ['smoothScroll'])
 .controller('HomeCtrl', [
   '$scope'
+, '$sce'
 , 'smoothScroll'
-, function($scope, smoothScroll) {
-    $scope.projectData = projectData;
-    $scope.skills = skills;
-    $scope.visible = false;
+, function($scope, $sce, smoothScroll) {
 
+    $scope.projectData  = projectData;
+    $scope.skills       = skills;
+    $scope.resumeLink   = 'https://drive.google.com/file/d/0BxEYM4aqzQ9lSDVLUFdlWFJaM2s/view'
+    $scope.visible      = false;
+    console.log($scope.resumeLink)
     $scope.pauseOrPlay = function(e) {
       var video = angular.element(e.srcElement)[0];
       video.paused ? video.play() : video.pause();
