@@ -8,7 +8,7 @@ angular
 
     $scope.projectData  = projectData;
     $scope.skills       = skills;
-    $scope.resumeLink   = 'https://drive.google.com/file/d/0BxEYM4aqzQ9lSDVLUFdlWFJaM2s/view'
+    $scope.resumeLink   = 'https://drive.google.com/file/d/0BxEYM4aqzQ9lQ0pBX2tqcVM4c2M/view'
     $scope.visible      = false;
     console.log($scope.resumeLink)
     $scope.pauseOrPlay = function(e) {
