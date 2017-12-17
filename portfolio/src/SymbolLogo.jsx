@@ -4,9 +4,9 @@ import './index.css';
 const SymbolLogo = () => {
   return (
     <div>
-      <span className="vectro red"  >I</span>
-      <span className="vectro green">I</span>
-      <span className="vectro blue" >I</span>
+      <span className="vectro red" >I</span>
+      <span className="vectro aqua">I</span>
+      <span className="vectro blue"  >I</span>
     </div>
   );
 }

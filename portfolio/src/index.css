@@ -5,7 +5,8 @@ body {
 }
 
 .background {
-  height :300px;
+  /*height :300px;*/
+  height: 100%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23,6 +24,10 @@ body {
     #204AFE, 
     #1226BB, 
     #1226BB)*/
+  background-image: url('./background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .bottom-layer {
   z-index: -1;
@@ -105,26 +110,27 @@ body {
   -webkit-text-stroke: 0;
   font-style: italic;
 }
-.red {
-  color: #F10C20;
-  -webkit-text-fill-color: #F10C20;
-  -webkit-filter: drop-shadow(2px 2px 8px #F10C20);
-  text-shadow: 0px 0px 6px rgba(255, 0, 0, 0.5);
-
-}
-
-.green {
-  color: #6BFF2B;
-  -webkit-text-fill-color: #6BFF2B;
-  -webkit-filter: drop-shadow(2px 2px 8px #6BFF2B);
-  text-shadow: 0px 0px 6px rgba(0, 255, 0, 0.5);
-
-}
-
 .blue {
-  color: #3F59F4;
-  -webkit-text-fill-color: #3F59F4;
-  -webkit-filter: drop-shadow(2px 2px 8px #3F59F4);
-  text-shadow: 0px 0px 6px rgba(0, 0, 255, 0.5);
+  color: #61b6e4;
+  -webkit-text-fill-color: #61b6e4;
+  -webkit-filter: drop-shadow(2px 2px 8px #61b6e4);
+  text-shadow: 0px 0px 6px rgba(97,182,228, 0.5);
 
 }
+
+.aqua {
+  color: #78e4bd;
+  -webkit-text-fill-color: #78e4bd;
+  -webkit-filter: drop-shadow(2px 2px 8px #78e4bd);
+  text-shadow: 0px 0px 6px rgba(120,228,189, 0.5);
+
+}
+
+.red {
+  color: #ea3b45;
+  -webkit-text-fill-color: #ea3b45;
+  -webkit-filter: drop-shadow(2px 2px 8px #ea3b45);
+  text-shadow: 0px 0px 6px rgba(234,59,69, 0.5);
+}
+
+
