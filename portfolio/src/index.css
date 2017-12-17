@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.background {
+  height :300px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  /*background: radial-gradient(
+    circle, 
+    #01E9FF,
+    #3168FC, 
+    #204AFE, 
+    #1226BB, 
+    #1226BB)*/
+}
+.bottom-layer {
+  z-index: -1;
+}
+.background-black {
+  background-color: black;
+}
+.absolute {
+  position: absolute;
+}
+.name {
+  padding: 25px;
+  font-family: 'Rammetto One', sans-serif;
+  position: relative;
+  font-size: 100px;
+  font-style: italic;
+}
+.shadow {
+  text-shadow: 0 0 200px rgba(255,255,255, 0.4);
+}
+.font1 {
+  line-height: 1;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 3px white;
+  background-image: -webkit-linear-gradient(
+    #378DBC 0%, 
+    #B6E8F1 46%, 
+    #ffffff 50%, 
+    #32120E 54%, 
+    #FFC488 58%, 
+    #582C11 90%, 
+    #EC9B4E 100%
+  );
+  -webkit-animation-name: chrome_effect;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+.font1:before {
+  content: 'Justin Hoang';
+  font-style: italic;
+  position: absolute;
+  padding: 25px;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  background-image: -webkit-linear-gradient(
+    -360deg, 
+    transparent 0%, 
+    transparent 30%, 
+    rgba(255,255,255, 0.4) 50%, 
+    transparent 60%, 
+    transparent 100%);
+  background-position:-680px 0;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 0;
+  padding-right: 10px;
+  -webkit-animation-name: chrome_effect;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.font2 {
+  font-family: 'Bowlby One SC', cursive;
+}
+
+@-webkit-keyframes chrome_effect {
+  0% {background-position:-680px 0;}
+  10% {background-position:420px 0;}
+  100% {background-position:420px 0;}
+}
+
+.vectro {
+  font-family: 'Rammetto One', sans-serif;
+  font-size: 100px;
+  -webkit-text-stroke: 0;
+  font-style: italic;
+}
+.red {
+  color: #F10C20;
+  -webkit-text-fill-color: #F10C20;
+  -webkit-filter: drop-shadow(2px 2px 8px #F10C20);
+  text-shadow: 0px 0px 6px rgba(255, 0, 0, 0.5);
+
+}
+
+.green {
+  color: #6BFF2B;
+  -webkit-text-fill-color: #6BFF2B;
+  -webkit-filter: drop-shadow(2px 2px 8px #6BFF2B);
+  text-shadow: 0px 0px 6px rgba(0, 255, 0, 0.5);
+
+}
+
+.blue {
+  color: #3F59F4;
+  -webkit-text-fill-color: #3F59F4;
+  -webkit-filter: drop-shadow(2px 2px 8px #3F59F4);
+  text-shadow: 0px 0px 6px rgba(0, 0, 255, 0.5);
+
+}
