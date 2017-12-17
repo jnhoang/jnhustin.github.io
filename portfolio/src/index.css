@@ -17,13 +17,6 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  /*background: radial-gradient(
-    circle, 
-    #01E9FF,
-    #3168FC, 
-    #204AFE, 
-    #1226BB, 
-    #1226BB)*/
   background-image: url('./background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -53,14 +46,14 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 3px white;
+  background-color: #ff0080;
   background-image: -webkit-linear-gradient(
-    #378DBC 0%, 
-    #B6E8F1 46%, 
-    #ffffff 50%, 
-    #32120E 54%, 
-    #FFC488 58%, 
-    #582C11 90%, 
-    #EC9B4E 100%
+    #1f4788 0%, 
+    #317589 46%, 
+    #ffffff 50%,
+    #000000 51%, 
+    #8e44ad 54%, 
+    #ffffff 100%
   );
   -webkit-animation-name: chrome_effect;
   -webkit-animation-duration: 3s;
